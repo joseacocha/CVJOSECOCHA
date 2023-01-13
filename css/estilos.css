@@ -1,0 +1,179 @@
+
+
+
+/* DEFINO UN MARGEN*/
+body{
+    font-family: var(--font);
+}
+
+/* Diseño el fondo del header */
+header 
+{
+    background: rgb(135, 197, 222); 
+    background-image: url(../Images/banner-1050629__340.webp); 
+    background-position: center center;
+    /*width: 960px;*/
+    margin: 0 auto;
+    padding: 1rem 0 3rem 0;
+    width: 80%;
+}
+
+
+
+section{
+    width: 960px;
+    margin: 0 auto;
+}
+
+/* MODELO FLEXIBLE QUE PERMITE IGNORAR LOS ESPACIOS QUE EXISTEN */
+/* ENTRE LAS CAJAS Y PERMITE UBICARLOS EN UNA MISMA LINEA*/
+/* EN VEZ DE OCUAPR TODA LA LINEA, SOLO OCUPA LO QUE CORRESPONDA*/
+header {
+    display: flex;
+   
+}
+
+img {
+    width: 120px;
+    height: 100px;
+    margin-right: 16px;
+    margin-left: 40px;
+    background-size: cover;
+    border-radius: 50%;
+
+}
+
+article {
+    width: 60%;
+}
+
+section {
+    display: flex;
+}
+
+/* defino otra manera de establecer formato */
+p, span {
+    color: blue;
+    width: 300px;
+} 
+
+/* ES SOLO PARA SABER COMO SE USA H1, PORQUE CONVIENE TRABAJAR CON CLASES*/
+/* PORQUE SE PUEDE APLICAR A DISTINTOS PARRAFOS, ENCABEZADOS, ETC*/
+/*h1{
+    /* AGREGO EL FONT FAMILI DEL GOOGLE FONT QUE APLIQUE EN CSS */
+    font-family: 'Roboto', sans-serif;
+    border-color: black;
+    /** padding: alejo o acerco el contenido, el titulo 
+    padding: 10px;   */
+    /* el orden es ARRIBA DERECHA ABAJO IZQUIERDA */
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-left: 3px;
+    border-right: 3px;
+    border-top: 10px;
+    border-bottom: 10px;
+    /** border-width: 5px; */
+    border-style: solid;
+    font-weight: bold;
+    color: blue;
+*/
+
+section {
+    width: 400px;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 20px;
+  }
+
+
+  #mi_parrafo1 {
+    color: green;
+    font-size: 20px;
+    border: 1px solid orange;
+    font-style: normal;
+
+  }
+
+    .estaesmiclase1 {
+        font-weight: bold; 
+        font-family: sans-serif;
+        font-size: 24px;
+        color: black;
+        text-decoration: underline;
+        }
+
+    .estaesmiclase2 {
+        /*font-weight: bold;*/
+        font-family: sans-serif;
+        font-style: italic;
+        font-size: 24px;
+        color: black;
+     }
+    
+      
+
+    .estaesmiclase3{
+        font-family: sans-serif;
+        font-style: italic;
+        font-size: 40px;
+        color: rgb(184, 211, 214);
+        position: absolute;
+        margin-left: 50px
+        /* border-width: 3px; */
+        /* border-style: dashed;*/
+        
+    } 
+
+    .estaesmiclase4 {
+        color: green;
+        font-size: 20px;
+        font-style: normal;
+    
+     }
+
+      /* La uso dentro del H2 para el boton de Experiencia Laboral */ 
+    .estaesmiclaseboton {
+        color: blue;
+        font-size: 20px;
+        font-style: normal;
+        text-decoration: underline;  
+     }
+
+     /* La uso para algunos tituos H2 */ 
+   .estaesmiclase5 {
+       color: blue;
+       font-size: 28px;
+       font-style: normal;
+       text-decoration: underline;
+    }
+        
+
+/* Defino la cantidad de columnas que ocupara el texto */
+/* Defino el codigo para varios navegadores */
+#unaColumna{
+    column-count:1;
+    column-gap:20px;
+    /*column-rule:4px double black;*/
+  
+     
+    -webkit-column-count:1;
+    -webkit-column-gap:20px;
+
+   /* -webkit-column-rule:4px double black;*/
+ 
+    -moz-column-count:1;
+    -moz-column-gap:20px;
+    /*-moz-column-rule:4px double black;*/
+ 
+    -o-column-count:1;
+    -o-column-gap:20px;
+    /*-o-column-rule:4px double black;*/
+ 
+    -ms-column-count:1;
+    -ms-column-gap:20px;
+    /*-ms-column-rule:4px double black;*/
+  
+  }
+ 

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CurriculumVitae</title>
+
+        <!-- Agrego un icono a la pagina -->
+        <link rel="icon"  href="Images/icono.ico">
+
+    <!-- hago referencia a los estilos que uso en forma absoluta-->
+    <link rel="stylesheet" type="text/css" href="css/estilos.css" />
+
+<!-- AGREGO EL LINK DE TIPOGRAFIA DE GOOGLE FONT -->
+<enlace rel="preconectar" href="https://fonts.googleapis.com">
+    <enlace rel="preconectar" href="https://fonts.gstatic.com" crossorigin>
+    <enlace href="https: //fonts.googleapis.com/css2? family= Roboto:wght@300 & display=swap" rel="stylesheet">
+
+
+
+</head>
+<body>
+
+    <header>
+        <img src="Images/Imagen1.jpg" alt="Mi Foto de Perfil" style="float: left;"/>
+        <div>
+            <h1 class="estaesmiclase3">   JOSE ALEJANDRO COCHA </h1>
+          
+        </div>
+    </header>
+ 
+    <SECTIOn>
+        <article>
+            <H2 class="estaesmiclase5"> Datos Personales</H2>
+            <p id="mi_parrafo1">DNI:14.719.299</p>
+         
+            <p id="mi_parrafo1">Fecha de Nacimiento:12/04/1963</p>
+
+            <p id="mi_parrafo1">Nacionalidad: Argentino</p>
+
+            <p id="mi_parrafo1">E-Mail: cochajosealejandro@gmail.com</p>
+
+        </article>
+        <aside>
+            <H2 class="estaesmiclase5"> Información Académica</H2>
+            <p id="mi_parrafo1">Título Secundario: Bachiller con Orientación Docente</p>
+
+            <p id="mi_parrafo1">Título Terciario: Profesorado en Educación Tecnologica</p>
+
+            <p id="mi_parrafo1">Título Universitario: Analista de Sistemas</p>
+
+        </aside>
+    </SECTIOn>
+
+    <section>
+            <OL>
+                <H2 class="estaesmiclase5"> Cursos Realizados </H2>
+                <div id="unaColumna">
+                    <li id="mi_parrafo1">Mantenimiento y Reparación de PC -2015- UNPAUACO-</li>
+                    <li id="mi_parrafo1">Aministración de Base de Datos Relacionales - 2016- UNPAUACO-</li>
+                    <li id="mi_parrafo1">Gestión de la calidad del software -2017- UNPAUACO-</li>
+                    <li id="mi_parrafo1">Conectividad Linux -2018- UNPAUACO-</li>
+                    <li id="mi_parrafo1">Redes Novell -Módulo Administration-2019- UNPAUACO-</li>
+                    <li id="mi_parrafo1">Introducción al Análisis con Oracle -2020- UNPAUACO-</li>
+                    <li id="mi_parrafo1">La Programación y su Didáctica I -2021- UNPAUACO-</li>
+                    <li id="mi_parrafo1">La Programación y su Didáctica II -2022- UNPAUACO-</li>
+                </div>
+            </OL>
+          
+    </section>
+          
+    <!-- En el siguiente codigo creo un boton y le asigno una funcion, es para aplicar el concepto-->
+    <section>
+        <button onclick='experienciaLaboral("UNPSJB -Sistemas-", "DATALAN -Administracion Redes-")'> <h2 class="estaesmiclaseboton">Mostrar Experiencia Laboral</h2>    </button> 
+    </section>
+    <section>
+        <div id="divJobs1"> </div>
+    </section>     
+    <section> 
+        <div id="divJobs2"> </div> 
+    </section>  
+            
+    <Script>
+      function experienciaLaboral(exp1, exp2) {
+      <!-- coloco en el div el contenido de las variables -->
+      var contenidoDivTrabajos = document.getElementById("divJobs");  
+      divJobs1.innerText= "Trabajo Uno :"+exp1; 
+      divJobs2.innerText = "Trabajo Dos :"+exp2;
+                }
+    </script>
+        
+        
+
+
+
+
+   <!-- la siguiente definicion "no la uso" solo la escribo para que vean una referencia a js-->
+    <!--<SCript src="js/functionbotones.js"></SCript>-->
+</body>
+</html>
